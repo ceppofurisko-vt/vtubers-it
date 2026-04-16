@@ -7,10 +7,11 @@
     <title>Vtubers.it</title>
     <meta name="description" content="In arrivo nel 2027 su Vtube Italia">
     <meta name="keywords" content="vtuber italiani, vtuber, vtubers, directory vtuber, network vtuber, community vtuber, virtual youtuber italia, vtuber twitch, vtuber youtube">
-    <!-- Google Fonts per un look moderno -->
+    <link rel="canonical" href="https://www.vtubers.it/" />
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Reset di base */
+
         * {
             margin: 0;
             padding: 0;
@@ -33,9 +34,9 @@
             width: 100%;
         }
 
-        /* Testo principale con animazione pulsante — ORA VIOLA */
+        
         .pulse-text {
-            color: #d9b8ff;          /* lavanda chiaro */
+            color: #d9b8ff;          
             font-size: clamp(3rem, 12vw, 6rem);
             font-weight: 700;
             letter-spacing: 0.1em;
@@ -52,18 +53,18 @@
             will-change: transform, opacity, text-shadow;
         }
 
-        /* L'anno in risalto, con un viola più intenso/magenta per contrasto */
+        
         .year {
             display: block;
-            font-size: 1.8em;        /* relativo al genitore, quindi più grande */
-            color: #f0a6ff;           /* rosa violaceo acceso */
+            font-size: 1.8em;        
+            color: #f0a6ff;          
             text-shadow: 0 0 25px #e879f9, 0 0 50px #d946ef, 0 0 70px #c026d3;
             margin-top: 0.2em;
             letter-spacing: 0.2em;
             font-weight: 800;
         }
 
-        /* Sottotitolo elegante */
+        
         .subtitle {
             color: #cdb5e8;
             font-size: 1.3rem;
@@ -79,7 +80,7 @@
             padding-right: 2rem;
         }
 
-        /* Definizione dell'animazione "pulse" — ora con ombre viola */
+        
         @keyframes pulse {
             0% {
                 transform: scale(1);
@@ -98,7 +99,6 @@
             }
         }
 
-        /* Animazione dedicata all'anno per un effetto più dinamico */
         .year {
             animation: pulseYear 2.8s infinite ease-in-out;
         }
@@ -114,7 +114,6 @@
             }
         }
 
-        /* Responsività */
         @media (max-width: 600px) {
             .pulse-text {
                 letter-spacing: 0.05em;
@@ -128,7 +127,6 @@
             }
         }
 
-        /* Sfondo glow viola (cerchio decorativo) */
         .background-glow {
             position: fixed;
             top: 50%;
@@ -157,7 +155,7 @@
     </style>
 </head>
 <body>
-    <!-- Sfondo animato sottile in viola -->
+
     <div class="background-glow"></div>
 
     <div class="container">
