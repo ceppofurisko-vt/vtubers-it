@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://vtubers.it/sitemap.xml
+Host: vtubers.it
