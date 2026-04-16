@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vtubers.it – Un progetto italiano sul Vtubing</title>
-    <meta name="description" content="Vtubers.it è un progetto italiano sul Vtubing in fase di sviluppo previsto nel 2027. Uno spazio in continua evoluzione.">
+    <meta name="description"
+        content="Vtubers.it è un progetto italiano sul Vtubing in fase di sviluppo previsto nel 2027. Uno spazio in continua evoluzione.">
     <link rel="canonical" href="https://www.vtubers.it/" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Vtubers.it",
-        "url": "https://www.vtubers.it",
-        "description": "Landing page di un progetto italiano sul VTubing in sviluppo per 2027, pensato per la crescita della scena italiana."
-    }
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Vtubers.it",
+            "url": "https://www.vtubers.it",
+            "description": "Landing page di un progetto italiano sul VTubing in sviluppo per 2027, pensato per la crescita della scena italiana."
+        }
     </script>
     <style>
         * {
@@ -109,17 +113,54 @@
             opacity: 0.95;
         }
 
+        .hero {
+            min-height: calc(100vh - 2rem);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .hero-top {
+            padding-top: 6rem;
+        }
+
+        .hero-bottom {
+            text-align: center;
+        }
+
+        .hero .section-title {
+            margin-top: 0;
+        }
+
+        .section-title{
+            text-align: center;
+            color: #c084fc;
+        }
+
+        .footer-links a {
+            transition: transform 0.2s ease, color 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            transform: translateY(-2px);
+            color: #f7f0ff;
+        }
+
         @keyframes pulse {
             0% {
                 transform: scale(1);
                 opacity: 0.9;
                 text-shadow: 0 0 15px #a855f7, 0 0 25px #c084fc;
             }
+
             50% {
                 transform: scale(1.08);
                 opacity: 1;
                 text-shadow: 0 0 30px #c084fc, 0 0 60px #d946ef, 0 0 80px #e879f9;
             }
+
             100% {
                 transform: scale(1);
                 opacity: 0.9;
@@ -132,10 +173,13 @@
         }
 
         @keyframes pulseYear {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: scale(1);
                 text-shadow: 0 0 25px #e879f9, 0 0 50px #d946ef, 0 0 70px #c026d3;
             }
+
             50% {
                 transform: scale(1.05);
                 text-shadow: 0 0 40px #f0a6ff, 0 0 80px #e879f9, 0 0 120px #c084fc;
@@ -181,6 +225,7 @@
                 opacity: 0.3;
                 transform: translate(-50%, -50%) scale(1);
             }
+
             100% {
                 opacity: 0.6;
                 transform: translate(-50%, -50%) scale(1.2);
@@ -188,65 +233,86 @@
         }
     </style>
 </head>
+
 <body>
     <div class="background-glow"></div>
-    <div class="container-fluid d-flex justify-content-center align-items-center min-vh-100">
-        <div class="row justify-content-center w-100">
-            <div class="col-12 col-md-10 col-lg-8 text-center">
-                <h1 class="pulse-text mb-4">
-                    In arrivo
-                    <span class="year">2027</span>
-                </h1>
-
-                <div class="content mt-5">
-                    <h2 class="content-heading mb-5">Vtubers.it – Un progetto italiano sul VTubing</h2>
-
-                    <div class="row">
-                        <div class="col-12">
-                            <section class="mb-5">
-                                <h3 class="section-title">Perché nasce Vtubers.it</h3>
-                                <p class="section-text">Il Vtubing in Italia sta crescendo, ma lo sta facendo in modo frammentato.
-                                Esistono creator, community e iniziative, ma manca ancora uno spazio pensato con una visione di lungo periodo.
-                                Vtubers.it nasce da questa osservazione, come progetto costruito con calma, ascolto e rispetto per una scena ancora in evoluzione.</p>
-                            </section>
-
-                            <section class="mb-5">
-                                <h3 class="section-title">Cosa non è questo progetto</h3>
-                                <p class="section-text">Vtubers.it non è un progetto personale, non è una piattaforma improvvisata e non nasce per inseguire una moda.
-                                Non stiamo rincorrendo il tempo: stiamo lavorando perché ciò che arriverà abbia senso anche tra qualche anno.</p>
-                            </section>
-
-                            <section class="mb-5">
-                                <h3 class="section-title">Cosa stiamo costruendo</h3>
-                                <p class="section-text">Stiamo lavorando a qualcosa che richiede tempo.
-                                Tempo per osservare, confrontarci e capire cosa manca davvero.
-                                Per questo non esiste una data pubblica né anticipazioni.
-                                Quando Vtubers.it sarà pronto, non servirà spiegarlo troppo.</p>
-                            </section>
-
-                            <section class="mb-5">
-                                <h3 class="section-title">Se ne vuoi parlare</h3>
-                                <p class="section-text">Questo progetto nasce anche dalle domande che genera.
-                                Se Vtubers.it ti incuriosisce, parlane.
-                                Il debutto è previsto nel 2027. Fino ad allora, questo spazio resterà volutamente essenziale.</p>
-                            </section>
-                        </div>
+    <main class="container-fluid px-3">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8 mx-auto">
+                <section class="hero">
+                    <div class="hero-top text-center">
+                        <h2 class="pulse-text mb-4">
+                            In arrivo
+                            <span class="year">2027</span>
+                        </h2>
                     </div>
-                </div>
+
+                    <div class="hero-bottom">
+                        <h1 class="content-heading mb-4">Vtubers.it – Un progetto italiano sul VTubing</h1>
+                        <section class="mb-5">
+                            <h3 class="section-title">Perché nasce Vtubers.it</h3>
+                            <p class="section-text">Il Vtubing in Italia sta crescendo, ma lo sta facendo in modo
+                                frammentato.
+                                Esistono creator, community e iniziative, ma manca ancora uno spazio pensato con una
+                                visione di lungo periodo.
+                                Vtubers.it nasce da questa osservazione, come progetto costruito con calma, ascolto e
+                                rispetto per una scena ancora in evoluzione.</p>
+                        </section>
+                    </div>
+                </section>
+
+                <section class="content">
+                    <section class="mb-5">
+                        <h3 class="section-title">Cosa non è questo progetto</h3>
+                        <p class="section-text">Vtubers.it non è un progetto personale, non è una piattaforma
+                            improvvisata e non nasce per inseguire una moda.
+                            Non stiamo rincorrendo il tempo: stiamo lavorando perché ciò che arriverà abbia senso anche
+                            tra qualche anno.</p>
+                    </section>
+
+                    <section class="mb-5">
+                        <h3 class="section-title">Cosa stiamo costruendo</h3>
+                        <p class="section-text">Stiamo lavorando a qualcosa che richiede tempo.
+                            Tempo per osservare, confrontarci e capire cosa manca davvero.
+                            Per questo non esiste una data pubblica né anticipazioni.
+                            Quando Vtubers.it sarà pronto, non servirà spiegarlo troppo.</p>
+                    </section>
+
+                    <section class="mb-5">
+                        <h3 class="section-title">Se ne vuoi parlare</h3>
+                        <p class="section-text">Questo progetto nasce anche dalle domande che genera.
+                            Se Vtubers.it ti incuriosisce, parlane.
+                            Il debutto è previsto nel 2027. Fino ad allora, questo spazio resterà volutamente
+                            essenziale.</p>
+                    </section>
+                </section>
             </div>
         </div>
-    </div>
+    </main>
+
     <footer class="text-center mt-5 py-4">
         <div class="container">
             <p class="text-light mb-3">Condividi Vtubers.it</p>
-            <div class="d-flex justify-content-center gap-3">
-                <a href="https://twitter.com/intent/tweet?url=https%3A//www.vtubers.it/&text=Scopri%20Vtubers.it" target="_blank" class="text-light fs-3" title="Condividi su X"><i class="bi bi-twitter-x"></i></a>
-                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.vtubers.it/" target="_blank" class="text-light fs-3" title="Condividi su Facebook"><i class="bi bi-facebook"></i></a>
-                <a href="https://wa.me/?text=Scopri%20Vtubers.it%20https%3A//www.vtubers.it/" target="_blank" class="text-light fs-3" title="Condividi su WhatsApp"><i class="bi bi-whatsapp"></i></a>
-                <a href="https://t.me/share/url?url=https%3A//www.vtubers.it/&text=Scopri%20Vtubers.it" target="_blank" class="text-light fs-3" title="Condividi su Telegram"><i class="bi bi-telegram"></i></a>
+            <div class="d-flex justify-content-center gap-3 footer-links">
+                <a href="https://discord.com/" target="_blank" class="text-light fs-3" title="Condividi su Discord"><i
+                        class="bi bi-discord"></i></a>
+                <a href="https://twitter.com/intent/tweet?url=https%3A//www.vtubers.it/&text=Scopri%20Vtubers.it"
+                    target="_blank" class="text-light fs-3" title="Condividi su X"><i class="bi bi-twitter-x"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" class="text-light fs-3"
+                    title="Condividi su Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.vtubers.it/" target="_blank"
+                    class="text-light fs-3" title="Condividi su Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://wa.me/?text=Scopri%20Vtubers.it%20https%3A//www.vtubers.it/" target="_blank"
+                    class="text-light fs-3" title="Condividi su WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://t.me/share/url?url=https%3A//www.vtubers.it/&text=Scopri%20Vtubers.it" target="_blank"
+                    class="text-light fs-3" title="Condividi su Telegram"><i class="bi bi-telegram"></i></a>
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
