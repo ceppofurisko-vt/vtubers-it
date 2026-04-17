@@ -109,14 +109,39 @@
         <div class="container">
             <p class="text-light mb-3">Condividi Vtubers.it</p>
             <div class="d-flex justify-content-center gap-3 footer-links">
+                
                 <a href="https://twitter.com/intent/tweet?url=https%3A//www.vtubers.it/&text=Scopri%20Vtubers.it"
-                    target="_blank" class="text-light fs-3" title="Condividi su X"><i class="bi bi-twitter-x"></i></a>
+                   target="_blank"
+                   class="text-light fs-3"
+                   title="Condividi su X"
+                   onclick="gtag('event','share',{
+                     method:'twitter',
+                     content_type:'landing_page',
+                     item_id:'vtubers_it_home'
+                   });">
+                   <i class="bi bi-twitter-x"></i>
+                </a>
+                
                 <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.vtubers.it/" target="_blank"
-                    class="text-light fs-3" title="Condividi su Facebook"><i class="bi bi-facebook"></i></a>
+                    class="text-light fs-3" title="Condividi su Facebook" onclick="gtag('event','share',{
+                      method:'facebook',
+                      content_type:'landing_page',
+                      item_id:'vtubers_it_home'
+                    });"><i class="bi bi-facebook"></i></a>
+                
                 <a href="https://wa.me/?text=Scopri%20Vtubers.it%20https%3A//www.vtubers.it/" target="_blank"
-                    class="text-light fs-3" title="Condividi su WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                    class="text-light fs-3" title="Condividi su WhatsApp" onclick="gtag('event','share',{
+                      method:'whatsapp',
+                      content_type:'landing_page',
+                      item_id:'vtubers_it_home'
+                    });"><i class="bi bi-whatsapp"></i></a>
+                
                 <a href="https://t.me/share/url?url=https%3A//www.vtubers.it/&text=Scopri%20Vtubers.it" target="_blank"
-                    class="text-light fs-3" title="Condividi su Telegram"><i class="bi bi-telegram"></i></a>
+                    class="text-light fs-3" title="Condividi su Telegram" onclick="gtag('event','share',{
+                      method:'telegram',
+                      content_type:'landing_page',
+                      item_id:'vtubers_it_home'
+                    });"><i class="bi bi-telegram"></i></a>
             </div>
         </div>
     </footer>
