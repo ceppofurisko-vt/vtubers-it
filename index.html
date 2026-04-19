@@ -39,10 +39,24 @@
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
-            "@type": "Organization",
+            "@type": "WebSite",
             "name": "Vtubers.it",
             "url": "https://www.vtubers.it",
-            "description": "Landing page di un progetto italiano sul Vtubing in sviluppo per 2027, pensato per la crescita della scena italiana."
+            "description": "Vtubers.it è un progetto italiano sul Vtubing in fase di sviluppo previsto nel 2027. Uno spazio in continua evoluzione per la crescita della scena italiana.",
+            "publisher": {
+                "@type": "Organization",
+                "name": "Vtubers.it",
+                "url": "https://www.vtubers.it",
+                "description": "Progetto italiano dedicato al Vtubing, pensato per unire creator, fan e community in modo organizzato.",
+                "logo": "TODO: Aggiungere URL del logo",
+                "foundingDate": "TODO: Aggiungere data di fondazione se disponibile"
+            },
+            "inLanguage": "it-IT",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://www.vtubers.it/search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
         }
     </script>
 
@@ -51,6 +65,34 @@
 </head>
 
 <body>
+
+    <!-- Navbar responsive -->
+    <!--    
+    <nav class="navbar" role="navigation" aria-label="Navigazione principale">
+        <div class="navbar-container">
+            <a  class="navbar-logo">Vtubers.it</a>
+            <button class="hamburger" aria-label="Apri menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="navbar-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" aria-current="page">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#servizi" class="nav-link">Servizi</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#chi-siamo" class="nav-link">Chi siamo</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contatti" class="nav-link">Contatti</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    -->
 
     <div class="background-glow"></div>
     <main class="container-fluid px-3">
@@ -142,6 +184,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="/assets/js/script.js"></script>
 
 </body>
 
