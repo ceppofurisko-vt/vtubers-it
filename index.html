@@ -20,21 +20,11 @@
     <link rel="canonical" href="https://www.vtubers.it/" />
     <link rel="icon" type="image/x-icon" href="https://www.vtubers.it/favicon.ico">
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-
-
-
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css">
-    </noscript>
-
-
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <script type="application/ld+json">
         {
@@ -64,54 +54,35 @@
 
 
     <script type="text/javascript">
-var _iub = _iub || [];
-_iub.csConfiguration = {"siteId":4501835,"cookiePolicyId":29409673,"storage":{"useSiteId":true}};
-_iub.csLangConfiguration = {"it":{"cookiePolicyId":29409673}};
-</script>
-<script type="text/javascript" src="https://cs.iubenda.com/autoblocking/4501835.js"></script>
-<script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stub.js"></script>
-<script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+        var _iub = _iub || [];
+        _iub.csConfiguration = { "siteId": 4501835, "cookiePolicyId": 29409673, "storage": { "useSiteId": true } };
+        _iub.csLangConfiguration = { "it": { "cookiePolicyId": 29409673 } };
+    </script>
+    <script type="text/javascript" src="https://cs.iubenda.com/autoblocking/4501835.js"></script>
+    <script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stub.js"></script>
+    <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
 </head>
 
 <body>
 
-    <!-- Navbar responsive -->
-       <nav class="navbar" role="navigation" aria-label="Navigazione principale">
-    <div class="navbar-container">
-      <a class="navbar-logo" href="/index.html">Vtubers.it</a>
-      <ul class="navbar-menu">
+    <!-- Navbar responsive - Bootstrap Mobile First -->
+    <nav class="navbar navbar-expand-lg navbar-dark" role="navigation" aria-label="Navigazione principale">
+        <div class="container-fluid px-3">
+            <a class="navbar-brand fw-bold" href="/index.html">Vtubers.it</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="/pages/vtuber-italiani-2026/index.html" class="nav-link active" aria-current="page">Il vtubing in Italia</a>
-                    </li>
-                </ul>
-    </div>
-  </nav>
-    <!--    
-        <nav class="navbar" role="navigation" aria-label="Navigazione principale">
-            <div class="navbar-container">
-                <a  class="navbar-logo">Vtubers.it</a>
-                <button class="hamburger" aria-label="Apri menu" aria-expanded="false">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="navbar-menu">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active" aria-current="page">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#servizi" class="nav-link">Servizi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#chi-siamo" class="nav-link">Chi siamo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contatti" class="nav-link">Contatti</a>
+                        <a href="/pages/vtuber-italiani-2026/index.html" class="nav-link active" aria-current="page">Il
+                            vtubing in Italia</a>
                     </li>
                 </ul>
             </div>
-        </nav>
-        -->
+        </div>
+    </nav>
 
     <div class="background-glow"></div>
     <main class="container-fluid px-3">
@@ -170,10 +141,8 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":29409673}};
             <div class="d-flex justify-content-center gap-3 footer-links">
 
 
-                                
-            <a href="https://x.com/vclippo"
-                
-                    target="_blank" class="text-light fs-3" title="Condividi su X" onclick="gtag('event','view-social',{
+
+                <a href="https://x.com/vclippo" target="_blank" class="text-light fs-3" title="Condividi su X" onclick="gtag('event','view-social',{
                      method:'twitter',
                      content_type:'landing_page',
                      item_id:'vtubers_it_home'
@@ -181,16 +150,15 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":29409673}};
                     <i class="bi bi-twitter-x"></i>
                 </a>
 
-                <a href="https://www.youtube.com/@vclippo"
-                
-                    target="_blank" class="text-light fs-3" title="Visita YouTube" onclick="gtag('event','view-social',{
+                <a href="https://www.youtube.com/@vclippo" target="_blank" class="text-light fs-3"
+                    title="Visita YouTube" onclick="gtag('event','view-social',{
                      method:'youtube',
                      content_type:'landing_page',
                      item_id:'vtubers_it_home'
                    });">
                     <i class="bi bi-youtube"></i>
                 </a>
-<!--
+                <!--
                 <a href="https://www.instagram.com/vtubers.it"
                 
                     target="_blank" class="text-light fs-3" title="Visita Instagram" onclick="gtag('event','view-social',{
@@ -216,6 +184,18 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":29409673}};
         </div>
     </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Verifica che Bootstrap sia caricato
+        if (typeof bootstrap === 'undefined') {
+            console.error('Bootstrap non caricato dal CDN, cerco di caricare da backup...');
+            const script = document.createElement('script');
+            script.src = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js';
+            document.head.appendChild(script);
+        } else {
+            console.log('Bootstrap caricato correttamente');
+        }
+    </script>
     <script src="/assets/js/script.js"></script>
 
 </body>
